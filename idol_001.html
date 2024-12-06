@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idol Agency Manager</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/characters.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/icons.css">
+    
+    <!-- JavaScript Files -->
+    <script src="js/game.js" defer></script>
+    <script src="js/agency.js" defer></script>
+    <script src="js/character.js" defer></script>
+    <script src="js/events.js" defer></script>
+    <script src="js/ui.js" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Header Section -->
+        <header>
+            <div id="agency-stats">
+                <span id="agency-name"></span>
+                <span id="funds"></span>
+                <span id="current-month"></span>
+                <span id="reputation"></span>
+            </div>
+        </header>
+
+        <!-- Main Game Area -->
+        <main>
+            <!-- Character Management -->
+            <section id="trainees-section">
+                <h2>Trainees</h2>
+                <div id="trainee-list"></div>
+                <button id="recruit-trainee">Recruit New Trainee</button>
+            </section>
+
+            <!-- Training Area -->
+            <section id="training-section">
+                <h2>Training</h2>
+                <div id="training-options"></div>
+            </section>
+
+            <!-- Album Production -->
+            <section id="album-section">
+                <h2>Album Production</h2>
+                <div id="album-creation"></div>
+                <div id="album-list"></div>
+            </section>
+
+            <!-- Events Panel -->
+            <section id="events-panel">
+                <h2>Events</h2>
+                <div id="current-event"></div>
+            </section>
+        </main>
+
+        <!-- Controls -->
+        <footer>
+            <button id="advance-month">Advance Month</button>
+            <button id="save-game">Save Game</button>
+            <button id="load-game">Load Game</button>
+        </footer>
+    </div>
+
+    <!-- Dialog Templates -->
+    <dialog id="event-dialog">
+        <div class="dialog-content">
+            <h3 id="event-title"></h3>
+            <p id="event-description"></p>
+            <div id="event-choices"></div>
+        </div>
+    </dialog>
+
+    <dialog id="character-dialog">
+        <div class="dialog-content">
+            <h3>Character Details</h3>
+            <div id="character-stats"></div>
+            <div id="character-actions"></div>
+        </div>
+    </dialog>
+</body>
+</html>
